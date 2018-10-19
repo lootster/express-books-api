@@ -49,7 +49,7 @@ beforeEach(async () => {
 });
 
 test("GET /authors", async () => {
-  const response = await request(app).get("/authors");
+  const response = await request(app).get("/authorsasdasd");
 
   expect(response.status).toBe(200);
 
