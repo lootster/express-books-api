@@ -7,6 +7,10 @@ const index = require("./routes/index");
 const books = require("./routes/books");
 const authors = require("./routes/authors");
 
+if (process.env.NODE_ENV !== 'production') {
+  require('dotenv').load();
+}
+
 const app = express();
 
 app.use(logger("dev"));
